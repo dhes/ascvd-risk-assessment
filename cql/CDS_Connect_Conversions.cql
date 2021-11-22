@@ -6,7 +6,7 @@
  *
  * Change log:
  * - 1.0.2:
- *  - Rename to_mg_per_dL function and add to_mg_per_dL_for_trigylceride() and 
+ *  - Rename to_mg_per_dL function and add to_mg_per_dL_for_trigylceride() and
  *    to_mg_per_dL_for_blood_glucose() functions.
  *
  */
