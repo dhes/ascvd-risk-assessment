@@ -5,9 +5,7 @@ data:
     gender: male
 # Unless today is 2021-11-22
 # ...please adjust the birthdate to make this patient's   
-# ...age >= 71 years.
-    birthDate: 1945-11-09
+# ...age >=80 years.
+    birthDate: 1941-11-22
 results:
-  Notification: null
-  Recommendation: null
-  Information: null
+  InDemographic: false
