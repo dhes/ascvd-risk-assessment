@@ -1,4 +1,4 @@
-name: contradictory_smoking_statuses_smoker
+name: included_smoker
 data:
   - resourceType: Patient
     extension:
@@ -26,5 +26,18 @@ data:
     code: 'LOINC#72166-2 Tobacco smoking status'
     valueCodeableConcept: 'SNOMEDCT#65568007 Cigarette smoker (finding)'
     issued: 2021-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#8480-6 Systolic blood pressure'
+    valueQuantity: '140 mm[Hg]'
+    issued: 2021-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma'
+    valueQuantity: 45 mg/dL
+    issued: 2021-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#2093-3 Cholesterol [Mass/volume] in Serum or Plasma'
+    valueQuantity: 180 mg/dL
+    issued: 2021-04-05T00:00:00.000Z
 results:
-  InDemopraphic: true
+  InDemographic: true
+  PatientBaselineRisk: $should exist
