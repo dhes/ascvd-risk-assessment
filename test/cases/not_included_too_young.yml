@@ -9,3 +9,5 @@ data:
     birthDate: 1981-11-23
 results:
   InDemographic: false
+  PatientBaselineRisk: null
+

@@ -9,3 +9,5 @@ data:
     birthDate: 1941-11-22
 results:
   InDemographic: false
+  PatientBaselineRisk: null
+
