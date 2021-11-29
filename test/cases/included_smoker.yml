@@ -13,11 +13,8 @@ data:
           valueString: 'White'
     name: Joe Smith
     gender: male
-# Unless today is 2021-11-22
-# ...please adjust the birthdate to make this patient's   
-# ...age about 60 years. 
+# age 60 years
     birthDate: 1961-11-10
-# ... give him a risk factor
   - resourceType: Observation
     code: 'LOINC#72166-2 Tobacco smoking status'
     valueCodeableConcept: 'SNOMEDCT#266919005 Never smoked tobacco (finding)'

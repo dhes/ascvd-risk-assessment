@@ -3,10 +3,8 @@ data:
   - resourceType: Patient
     name: Joe Smith
     gender: male
-# Unless today is 2021-11-22
-# ...please adjust the birthdate to make this patient's   
-# ...age >=80 years.
-    birthDate: 1941-11-22
+# age 80 years.
+    birthDate: 1941-11-10
 results:
   InDemographic: false
   PatientBaselineRisk: null
