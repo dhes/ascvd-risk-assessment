@@ -1,0 +1,208 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/a6c7f012-0b32-4048-8c8b-27d2763b8cdc"
+      },
+      "resource": { 
+        "resourceType": "Patient",
+        "id": "a6c7f012-0b32-4048-8c8b-27d2763b8cdc",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2106-3",
+                  "display": "White"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "White"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Joe"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1961-11-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c20cfda5-a4d1-4030-b339-669695c318f0"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c20cfda5-a4d1-4030-b339-669695c318f0",
+        "subject": {
+          "reference": "Patient/a6c7f012-0b32-4048-8c8b-27d2763b8cdc"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ],
+          "text": "Tobacco smoking status"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266919005",
+              "display": "Never smoked tobacco (finding)"
+            }
+          ],
+          "text": "Never smoked tobacco (finding)"
+        },
+        "issued": "2018-04-05T00:00:00.000Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c1cdee07-6859-44a7-809f-0dbfab717265"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c1cdee07-6859-44a7-809f-0dbfab717265",
+        "subject": {
+          "reference": "Patient/a6c7f012-0b32-4048-8c8b-27d2763b8cdc"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ],
+          "text": "Tobacco smoking status"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "65568007",
+              "display": "Cigarette smoker (finding)"
+            }
+          ],
+          "text": "Cigarette smoker (finding)"
+        },
+        "issued": "2021-04-05T00:00:00.000Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/850d56c2-185b-458c-86cb-1771b0532a0e"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "850d56c2-185b-458c-86cb-1771b0532a0e",
+        "subject": {
+          "reference": "Patient/a6c7f012-0b32-4048-8c8b-27d2763b8cdc"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 140,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "issued": "2021-04-05T00:00:00.000Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/38df48ad-039a-4dee-b647-affe7d26fb81"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "38df48ad-039a-4dee-b647-affe7d26fb81",
+        "subject": {
+          "reference": "Patient/a6c7f012-0b32-4048-8c8b-27d2763b8cdc"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "value": 45,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "issued": "2021-04-05T00:00:00.000Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/bd5c5b6d-9b07-4bba-9ad3-9449f58bb988"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bd5c5b6d-9b07-4bba-9ad3-9449f58bb988",
+        "subject": {
+          "reference": "Patient/a6c7f012-0b32-4048-8c8b-27d2763b8cdc"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol [Mass/volume] in Serum or Plasma"
+        },
+        "valueQuantity": {
+          "value": 180,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "issued": "2021-04-05T00:00:00.000Z"
+      }
+    }
+  ]
+}
