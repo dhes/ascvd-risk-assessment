@@ -407,6 +407,9 @@ define PopulationLogHazard: Params[14]
 define PatientBaselineRisk:
 	1.0 - BaselineSurvival^( Exp( PatientLogHazard - PopulationLogHazard ) )
 
+define PatientBaselineRiskPercent:
+  Round(PatientBaselineRisk * 100, 2)
+
 // The list of pertinent error messages related to:
 // - the patient not meeting inclusion criteria
 // - necessary data missing from the patient's record or too old to use
