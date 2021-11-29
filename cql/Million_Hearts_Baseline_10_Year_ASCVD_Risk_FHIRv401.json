@@ -255,6 +255,29 @@
                } ]
             }
          }, {
+            "name" : "Age",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "precision" : "Year",
+               "type" : "CalculateAge",
+               "operand" : {
+                  "path" : "birthDate.value",
+                  "type" : "Property",
+                  "source" : {
+                     "name" : "Patient",
+                     "type" : "ExpressionRef"
+                  }
+               }
+            }
+         }, {
+            "name" : "Now",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "type" : "Now"
+            }
+         }, {
             "name" : "RaceExtension",
             "context" : "Patient",
             "accessLevel" : "Public",

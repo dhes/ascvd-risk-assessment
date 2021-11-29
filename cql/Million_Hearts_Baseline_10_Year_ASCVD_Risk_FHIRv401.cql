@@ -119,6 +119,10 @@ define function AdjustedResult(Result System.Quantity, AllowedRange Interval<Sys
 define InDemographic:
   AgeInYears() >= 40 and AgeInYears() <= 79
 
+// only for troubleshooting: delete or comment out as you like
+define Age: AgeInYears()
+define Now: Now()
+
 // ## Gather patient observations and characteristics needed by the risk model.
 
 // Race and gender determine which set of parameters to use in the calculation.
