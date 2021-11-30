@@ -11,10 +11,11 @@ data:
             display: 'White'
         - url: 'text'
           valueString: 'White'
-    name: William Smith
+    name: SmokingHistory AscvdRisk TooOld
     gender: male
     # age 60 years
     birthDate: 1961-11-10
+    # triggers request for info - too old
   - resourceType: Observation
     code: 'LOINC#72166-2 Tobacco smoking status'
     valueCodeableConcept: 'SNOMEDCT#266919005 Never smoked tobacco (finding)'

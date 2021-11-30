@@ -1,7 +1,8 @@
 name: not_included_too_young
+# out of demographic; no risk score and triggers most common errors
 data:
   - resourceType: Patient
-    name: Ted Smith
+    name: Too AscvdRisk Young
     gender: male
 # age 40 years minus 1 day.
     birthDate: 1981-11-11

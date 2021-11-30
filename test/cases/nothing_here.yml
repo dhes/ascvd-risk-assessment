@@ -1,7 +1,8 @@
 name: nothing_here
+# the only thing you know about this patient is their age, trigginer all errors
 data:
   - resourceType: Patient
-    name: Nothing Here
+    name: Nothing AscvdRisk Here
     # no gender!
     # no birthdate
 results:
