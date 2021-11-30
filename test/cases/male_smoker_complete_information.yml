@@ -1,4 +1,4 @@
-name: included_smoker_complete_information
+name: male_smoker_complete_information
 data:
   - resourceType: Patient
     extension:
@@ -11,11 +11,11 @@ data:
             display: 'White'
         - url: 'text'
           valueString: 'White'
-    name: CompleteInformation AscvdRisk Smoker
+    name: CompleteInformation AscvdRisk MaleSmoker
     gender: male
     # age 60 years
     birthDate: 1961-11-10
-    # this smokding observation is not the newest so it doesn't figure in the logic s
+    # this smoking observation is not the newest so it doesn't figure in the logic
   - resourceType: Observation
     code: 'LOINC#72166-2 Tobacco smoking status'
     valueCodeableConcept: 'SNOMEDCT#266919005 Never smoked tobacco (finding)'

@@ -1,0 +1,44 @@
+name: female_smoker_complete_information
+data:
+  - resourceType: Patient
+    extension:
+      url: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'
+      extension:
+        - url: 'ombCategory'
+          valueCoding: 
+            system: 'urn:oid:2.16.840.1.113883.6.238'
+            code: '2106-3'
+            display: 'White'
+        - url: 'text'
+          valueString: 'White'
+    name: CompleteInformation AscvdRisk FemaleSmoker
+    gender: female
+    # age 60 years
+    birthDate: 1961-11-10
+    # this smoking observation is not the newest so it doesn't figure in the logic
+  - resourceType: Observation
+    code: 'LOINC#72166-2 Tobacco smoking status'
+    valueCodeableConcept: 'SNOMEDCT#266919005 Never smoked tobacco (finding)'
+    issued: 2018-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#72166-2 Tobacco smoking status'
+    valueCodeableConcept: 'SNOMEDCT#65568007 Cigarette smoker (finding)'
+    issued: 2021-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#8480-6 Systolic blood pressure'
+    valueQuantity: '140 mm[Hg]'
+    issued: 2021-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#2085-9 Cholesterol in HDL [Mass/volume] in Serum or Plasma'
+    valueQuantity: 45 mg/dL
+    issued: 2021-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#2093-3 Cholesterol [Mass/volume] in Serum or Plasma'
+    valueQuantity: 180 mg/dL
+    issued: 2021-04-05T00:00:00.000Z
+results:
+  InDemographic: true
+  PatientBaselineRisk: $should exist
+  InDemographicAndHasErrors: false
+  AllErrors: null
+
