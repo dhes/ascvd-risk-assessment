@@ -1,14 +1,20 @@
 name: not_included_too_old
 data:
   - resourceType: Patient
-    name: Joe Smith
+    name: Sam Smith
     gender: male
-# age 80 years plus one day (see gotcha)
-# gotcha! If Now() is set in cqlt.yaml as 2021-11-10  and birthDate is set here as 
-# ... 1941-11-10 then cql AgeInYears() will equal 79. So set birthday so that age 
-# ... equals 80 years plus 1 day as on the next line:
+    # age 80 years plus one day (see gotcha)
+    # gotcha! If Now() is set in cqlt.yaml as 2021-11-10  and birthDate is set here as 
+    # ... 1941-11-10 then cql AgeInYears() will equal 79. So set birthday so that age 
+    # ... equals 80 years plus 1 day as on the next line:
     birthDate: 1941-11-09
 results:
   InDemographic: false
   PatientBaselineRisk: null
-
+  InDemographicAndHasErrors: false
+  AllErrors: |-
+    - Race 
+    - Total cholesterol within the last six years 
+    - HDL cholesterol within the last six years 
+    - Systolic blood pressure within the last six years 
+    - Tobacco smoking status within the last year 

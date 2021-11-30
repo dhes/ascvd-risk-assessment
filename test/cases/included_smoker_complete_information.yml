@@ -1,4 +1,4 @@
-name: included_smoker
+name: included_smoker_complete_information
 data:
   - resourceType: Patient
     extension:
@@ -13,7 +13,7 @@ data:
           valueString: 'White'
     name: Joe Smith
     gender: male
-# age 60 years
+    # age 60 years
     birthDate: 1961-11-10
   - resourceType: Observation
     code: 'LOINC#72166-2 Tobacco smoking status'
@@ -38,3 +38,6 @@ data:
 results:
   InDemographic: true
   PatientBaselineRisk: $should exist
+  InDemographicAndHasErrors: false
+  AllErrors: null
+

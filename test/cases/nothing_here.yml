@@ -1,16 +1,19 @@
-name: not_included_too_young
+name: nothing_here
 data:
   - resourceType: Patient
-    name: Ted Smith
-    gender: male
-# age 40 years minus 1 day.
-    birthDate: 1981-11-11
+    name: Nothing Here
+    # no gender!
+    # no birthdate
 results:
-  InDemographic: false
+  # null because there is no birthday so AgeInYear()=null
+  InDemographic: null
   PatientBaselineRisk: null
-  InDemographicAndHasErrors: false
+  # null because InDemographic is null
+  InDemographicAndHasErrors: null
   AllErrors: |-
+    - Birthdate 
     - Race 
+    - Gender (male / female) 
     - Total cholesterol within the last six years 
     - HDL cholesterol within the last six years 
     - Systolic blood pressure within the last six years 
