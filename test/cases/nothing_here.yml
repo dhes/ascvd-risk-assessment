@@ -10,7 +10,6 @@ results:
   InDemographic: null
   PatientBaselineRisk: null
   # null because InDemographic is null
-  InDemographicAndHasErrors: null
   AllErrors: |-
     - Birthdate 
     - Race 

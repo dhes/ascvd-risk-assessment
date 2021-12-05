@@ -9,10 +9,4 @@ data:
 results:
   InDemographic: false
   PatientBaselineRisk: null
-  InDemographicAndHasErrors: false
-  AllErrors: |-
-    - Race 
-    - Total cholesterol within the last six years 
-    - HDL cholesterol within the last six years 
-    - Systolic blood pressure within the last six years 
-    - Tobacco smoking status within the last year 
+  AllErrors: null

@@ -35,6 +35,5 @@ data:
 results:
   InDemographic: true
   PatientBaselineRisk: null
-  InDemographicAndHasErrors: true
   AllErrors: |-
     - Tobacco smoking status within the last year 

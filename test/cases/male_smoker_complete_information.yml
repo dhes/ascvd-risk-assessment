@@ -39,6 +39,5 @@ data:
 results:
   InDemographic: true
   PatientBaselineRisk: $should exist
-  InDemographicAndHasErrors: false
   AllErrors: null
 
