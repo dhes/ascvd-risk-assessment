@@ -254,7 +254,9 @@ define MostRecentValidSmokingStatus:
 // Determines if last documented smoking status pointed to patient being a smoker.
 define IsSmoker:
   if MostRecentValidSmokingStatus is null then null
-  else MostRecentValidSmokingStatus in "Current Tobacco Smoker"
+  else MostRecentValidSmokingStatus in "Current Tobacco Smoker" // => true if in, false if not
+  // DH So this query returns three possible values: null, true, false. 
+  // Null indicates no valid smoking history in the last year. 
 
 // The binomial (0/1) representation of the patient's status as a smoker.  If no smoking status is recorded this result
 // is null, in order to distinguish missing data from a false value.
@@ -454,7 +456,7 @@ define Errors:
       '- Systolic blood pressure within the last six years '
     else null,
     // Patient must have a recorded smoking status in the last year to use for calculation.
-    if IsSmoker is null then
+    if MostRecentValidSmokingStatus is null then
       '- Tobacco smoking status within the last year '
     else null
   }) E where E is not null

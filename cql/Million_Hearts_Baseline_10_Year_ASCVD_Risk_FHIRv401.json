@@ -2858,7 +2858,7 @@
                            "operand" : {
                               "type" : "IsNull",
                               "operand" : {
-                                 "name" : "IsSmoker",
+                                 "name" : "MostRecentValidSmokingStatus",
                                  "type" : "ExpressionRef"
                               }
                            }
