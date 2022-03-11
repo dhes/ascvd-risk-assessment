@@ -12,7 +12,7 @@ data:
               display: White
           - url: text
             valueString: White
-    active: true 
+    active: true
     name: Peter Barnes
     gender: male
     birthDate: 1953-06-05
@@ -63,7 +63,26 @@ data:
           unit: mmHg
           system: http://unitsofmeasure.org
           code: mm[Hg]
+  - resourceType: Procedure
+    code: 'SNOMEDCT#73761001 Colonoscopy (procedure)'
+    status: completed
+    performedDateTime: 2021-10-04
+  - resourceType: Procedure
+    code: 'SNOMEDCT#73761001 Colonoscopy (procedure)'
+    status: completed
+    performedDateTime: 2020-07-24
+  - resourceType: Procedure
+    code: 'SNOMEDCT#73761001 Colonoscopy (procedure)'
+    status: completed
+    performedDateTime: 2019-07-22
+  - resourceType: Procedure
+    code: 'SNOMEDCT#73761001 Colonoscopy (procedure)'
+    status: completed
+    performedDateTime: 2011-07-12
 results:
+  Numerator: true
+  Denominator Exclusions: false
   InDemographic: true
-  PatientBaselineRisk: $should exist
-  AllErrors: null
+  NeedsColorectalCancerScreening: false
+  Recommendation: null
+
